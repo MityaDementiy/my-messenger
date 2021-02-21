@@ -8,6 +8,9 @@ export default class Message extends React.Component {
     };
 
     render() {
-        return <div><span>{this.props.user}</span>{this.props.text}</div>;
+        return <div className="message"
+        style={ { backgroundColor: this.props.user === 'Bot: ' ?
+                'light-blue' : 'Aquamarine' } }
+><span className="message-sender">{this.props.user}</span>{this.props.text}</div>;
     }
 }
