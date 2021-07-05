@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './components/MessageField.jsx';
 
 ReactDOM.render(
-   <App />,
-   document.getElementById('root'),
+    <App />,
+    document.getElementById('root'),
 );
